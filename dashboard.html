@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RajitBoots Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="flex min-h-screen">
+    
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 p-5 space-y-6">
+      <h1 class="text-2xl font-bold text-blue-400">RajitBoots</h1>
+      <nav class="space-y-4">
+        <a href="dashboard.html" class="block py-2 px-3 rounded hover:bg-gray-700">🏠 Dashboard</a>
+        <a href="job-details.html" class="block py-2 px-3 rounded hover:bg-gray-700">💼 Jobs</a>
+        <a href="messages.html" class="block py-2 px-3 rounded hover:bg-gray-700">💬 Messages</a>
+        <a href="wallet.html" class="block py-2 px-3 rounded hover:bg-gray-700">💰 Wallet</a> <!-- You can create wallet.html later -->
+        <a href="profile.html" class="block py-2 px-3 rounded hover:bg-gray-700">👤 Profile</a>
+        <a href="settings.html" class="block py-2 px-3 rounded hover:bg-gray-700">⚙️ Settings</a> <!-- You can create settings.html -->
+        <a href="index.html" class="block py-2 px-3 rounded hover:bg-gray-700">🔙 Home</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 space-y-6">
+      <!-- Topbar -->
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="text-xl font-semibold">Welcome back, Rajit 👋</h2>
+          <p class="text-gray-400 text-sm">Here’s your dashboard overview</p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="text-gray-400 hover:text-white">🔔</button>
+          <img src="https://i.pravatar.cc/40" alt="User" class="w-10 h-10 rounded-full">
+        </div>
+      </div>
+
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-5 rounded-xl shadow-md">
+          <h3 class="text-gray-400 text-sm">Earnings</h3>
+          <p class="text-2xl font-bold text-green-400">₹12,400</p>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-xl shadow-md">
+          <h3 class="text-gray-400 text-sm">Active Jobs</h3>
+          <p class="text-2xl font-bold text-blue-400">3</p>
+        </div>
+        <div class="bg-gray-800 p-5 rounded-xl shadow-md">
+          <h3 class="text-gray-400 text-sm">Messages</h3>
+          <p class="text-2xl font-bold text-yellow-400">7</p>
+        </div>
+      </div>
+
+      <!-- Job List -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Your Active Projects</h3>
+        <div class="space-y-3">
+          <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center hover:bg-gray-700">
+            <div>
+              <h4 class="font-bold">Website Redesign</h4>
+              <p class="text-sm text-gray-400">Due: 25 July 2025</p>
+            </div>
+            <span class="text-green-400 font-semibold">In Progress</span>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center hover:bg-gray-700">
+            <div>
+              <h4 class="font-bold">Mobile App UI</h4>
+              <p class="text-sm text-gray-400">Due: 30 July 2025</p>
+            </div>
+            <span class="text-yellow-400 font-semibold">Pending</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
